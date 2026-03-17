@@ -12,6 +12,7 @@ public class ListExample {
         fruits.add("Apple");
         fruits.add("Banana");
         fruits.add("Apple"); // Duplicaciones permitidas
+
         // Cambio git
         System.out.println(fruits); // Salida: [Apple, Banana, Apple]
         System.out.println(fruits.get(1)); // Acceso por indice: Banana
