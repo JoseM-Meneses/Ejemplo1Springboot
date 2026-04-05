@@ -1,4 +1,4 @@
-package itm.edu.ejemploSpringboot1.ejemplosPOO;
+package itm.edu.ejemploSpringboot1.ejemplosPasados.ejemplosPOO;
 
 public class CalculadoraSumas {
     public int sumar(int a, int b){
