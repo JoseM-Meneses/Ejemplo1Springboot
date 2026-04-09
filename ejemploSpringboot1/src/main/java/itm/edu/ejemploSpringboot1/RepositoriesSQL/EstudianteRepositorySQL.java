@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class EstudianteRepositorySQL {
+public class EstudianteRepositorySQL implements EstudianteRepositoryInterface{
     //Aplicamos el patrón DAO: data access object, transforma objetos en registros de base de datos
     //y registros de base de datos en objetos
 

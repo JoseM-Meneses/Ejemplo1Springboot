@@ -1,28 +1,19 @@
 package itm.edu.ejemploSpringboot1.controllers;
 
 import itm.edu.ejemploSpringboot1.IdentidadesSQL.Estudiante;
-import itm.edu.ejemploSpringboot1.Services.EstudianteServices;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import itm.edu.ejemploSpringboot1.Services.EstudianteServicesInterface;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.util.ObjectUtils;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
-@RestController
-@RequestMapping("estudiantes")
-public class EstudianteController implements EstudianteControllerApi {
-
-    @Autowired
-    private EstudianteServices services;
-
+public interface EstudianteControllerApi {
     @Operation(
             tags = {"Estudiantes"},
             summary = "trae la lista de estudiantes desde la base de datos",
@@ -39,15 +30,8 @@ public class EstudianteController implements EstudianteControllerApi {
             }
     )
     @GetMapping("/listar")
-    public ResponseEntity<List<Estudiante>> getEstudiantes(){
-        return new ResponseEntity<>(services.getEstudiantes(),HttpStatus.OK);
-    }
+    ResponseEntity<List<Estudiante>> getEstudiantes();
 
     @PostMapping("/nuevo")
-    public ResponseEntity<Estudiante> insertarEstudiante(@RequestBody Estudiante estudiante){
-        if(ObjectUtils.isEmpty(estudiante) || ObjectUtils.isEmpty(estudiante.getNombres())){
-            return new ResponseEntity<>(estudiante, HttpStatus.BAD_REQUEST);
-        }
-        return new ResponseEntity<>( services.insertarEstudiante(estudiante), HttpStatus.ACCEPTED);
-    }
+    ResponseEntity<Estudiante> insertarEstudiante(@RequestBody Estudiante estudiante);
 }
