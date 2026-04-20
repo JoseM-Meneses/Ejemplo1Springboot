@@ -1,4 +1,4 @@
-package itm.edu.ejemploSpringboot1.ejemplosPOO;
+package itm.edu.ejemploSpringboot1.ejemplosPasados.ejemplosPOO;
 
 public class Gato extends  Animal{
     public Gato(String nombre) {
@@ -6,6 +6,6 @@ public class Gato extends  Animal{
     }
 
     public void hacerSonido(){
-        System.out.println(" gato maullando");
+        System.out.println(" gato maullandoooo");
     }
 }

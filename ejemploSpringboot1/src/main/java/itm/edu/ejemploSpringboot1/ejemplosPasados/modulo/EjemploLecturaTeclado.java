@@ -1,4 +1,4 @@
-package itm.edu.ejemploSpringboot1.modulo;
+package itm.edu.ejemploSpringboot1.ejemplosPasados.modulo;
 
 import java.io.BufferedReader;
 import java.io.IOException;

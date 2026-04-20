@@ -1,4 +1,4 @@
-package itm.edu.ejemploSpringboot1.ejemploColecciones;
+package itm.edu.ejemploSpringboot1.ejemplosPasados.ejemplosColecciones;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;

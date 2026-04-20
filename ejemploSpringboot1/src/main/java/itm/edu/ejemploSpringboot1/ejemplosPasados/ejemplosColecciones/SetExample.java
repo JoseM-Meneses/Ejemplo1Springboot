@@ -1,6 +1,4 @@
-package itm.edu.ejemploSpringboot1.ejemploColecciones;
-
-import org.springframework.core.metrics.StartupStep;
+package itm.edu.ejemploSpringboot1.ejemplosPasados.ejemplosColecciones;
 
 import java.util.HashSet;
 import java.util.LinkedHashSet;

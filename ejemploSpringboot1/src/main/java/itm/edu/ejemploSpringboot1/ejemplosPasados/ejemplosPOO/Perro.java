@@ -1,4 +1,4 @@
-package itm.edu.ejemploSpringboot1.ejemplosPOO;
+package itm.edu.ejemploSpringboot1.ejemplosPasados.ejemplosPOO;
 
 public class Perro extends Animal{
     public Perro(String nombre) {

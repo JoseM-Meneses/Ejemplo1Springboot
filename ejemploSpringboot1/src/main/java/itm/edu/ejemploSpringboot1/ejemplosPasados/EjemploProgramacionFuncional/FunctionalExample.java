@@ -1,4 +1,4 @@
-package itm.edu.ejemploSpringboot1.EjemploProgramacionFuncional;
+package itm.edu.ejemploSpringboot1.ejemplosPasados.EjemploProgramacionFuncional;
 
 import java.util.HashMap;
 import java.util.Map;
